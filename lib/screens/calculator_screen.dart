@@ -274,6 +274,13 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   }
 }
 
+// this is a custom widget that we created to make our code more readable
+// we are using the stateless widget because we do not want to change the state of the app
+// we are using the required keyword to make sure that the button text, button color, text color and onpressed function are not null
+// we are using the final keyword to make sure that the button text, button color, text color and onpressed function are not changed
+// we are using the voidcallback function to set the action of the button and we are using the required keyword to make sure that the function is not null
+// we are using the super keyword to call the constructor of the stateless widget
+
 class CalculatorButton extends StatelessWidget {
   const CalculatorButton({
     super.key,
@@ -286,6 +293,12 @@ class CalculatorButton extends StatelessWidget {
   final Color buttonColor;
   final Color textColor;
   final VoidCallback onPressed;
+
+// we are using the mediaquery function to get the size of the screen
+// we are using the sizedbox widget to set the height and width of the button
+// we are using the textbutton widget to create a button
+// we are using the textbutton style to set the background color and shape of the button
+// we are using the textbutton onpressed to set the action of the button
 
   @override
   Widget build(BuildContext context) {
